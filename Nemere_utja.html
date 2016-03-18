@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Nemere utja</title>
+<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ol3/3.5.0/ol.css" type="text/css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ol3/3.5.0/ol.js"></script>
+<link rel="stylesheet" href="css/nemere.css" type="text/css">
+<script src="scripts/map.js"></script>
+
+</head>
+<body onload='init()'>
+<div id="map" class="map"></div>
+<div id="toolbox">
+<ul id="layerswitcher">
+<li><label><input id='radio0' type="radio" name="layer" value="0" checked onclick="change_layer()">OpenStreetMap</label></li>
+<li><label><input id='radio1' type="radio" name="layer" value="1" onclick="change_layer()">OpenCycleMap</label></li>
+</ul>
+</div>
+</body>
+</html>
